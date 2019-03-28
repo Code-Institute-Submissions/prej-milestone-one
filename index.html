@@ -5,12 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">https://getbootstrap.com/docs/4.3/components/navbar/#placement
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <title>The Monkees</title>
 </head>
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item px-lg-5">
+                    <a href="#myPage" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-lg-5">
+                    <a href="#band" class="nav-link">Band</a>
+                </li>
+                <li class="nav-item px-lg-5">
+                    <a href="#audio" class="nav-link">Audio</a>
+                </li>
+                <li class="nav-item px-lg-5">
+                    <a href="#video" class="nav-link">Video</a>
+                </li>
+                <li class="nav-item px-lg-5">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Carousel -->
     <div id="bandCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -40,7 +68,7 @@
     </div>
 
     <!-- Band Info Section -->
-    <div class="container text-center p-5">
+    <div id="band" class="container text-center p-5">
         <h1>The Monkees</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, ratione.</p>
         <p>Website for The Monkees</p>
@@ -93,7 +121,7 @@
     </div>
 
     <!-- Audio Section -->
-    <div class="container-fluid text-center p-5 dark-bg">
+    <div id="audio" class="container-fluid text-center p-5 dark-bg">
         <h3 class="text-white">AUDIO</h3>
         <p class="text-light">We love sharing our music with our fans, so check out four of our greatest hits here!</p>
 
@@ -118,7 +146,7 @@
     </div>
 
     <!-- Video Section -->
-    <div class="container text-center p-5">
+    <div id="video" class="container text-center p-5">
         <h3>VIDEO</h3>
         <p>Check out the music video to our song, Daydream Believer, from our hit album, The Birds, The Bees & The Monkees</p>
 
@@ -128,7 +156,7 @@
     </div>
 
     <!-- Contact Us Section -->
-    <div class="container-fluid text-center p-5 dark-bg">
+    <div id="contact" class="container-fluid text-center p-5 dark-bg">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <h3 class="text-white">

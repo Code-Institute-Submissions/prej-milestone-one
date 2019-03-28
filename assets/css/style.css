@@ -1,3 +1,9 @@
+/* Scrollspy requirement */
+
+body {
+    position: relative;
+}
+
 /* Image styles */
 
 .bandmember {
