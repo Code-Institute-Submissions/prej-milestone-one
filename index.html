@@ -11,30 +11,32 @@
     <title>The Monkees</title>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" class="bg-light-shade">
     <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a href="#" class="navbar-brand">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-shade fixed-top">
+        <a href="#" class="navbar-brand">
+            <img src="./assets/images/logo.png" alt="Monkees logo" width="50">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item px-lg-5">
-                    <a href="#myPage" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item mx-lg-2">
+                    <a href="#myPage" class="nav-link py-3">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item px-lg-5">
-                    <a href="#band" class="nav-link">Band</a>
+                <li class="nav-item mx-lg-2">
+                    <a href="#band" class="nav-link py-3">Band</a>
                 </li>
-                <li class="nav-item px-lg-5">
-                    <a href="#audio" class="nav-link">Audio</a>
+                <li class="nav-item mx-lg-2">
+                    <a href="#audio" class="nav-link py-3">Audio</a>
                 </li>
-                <li class="nav-item px-lg-5">
-                    <a href="#video" class="nav-link">Video</a>
+                <li class="nav-item mx-lg-2">
+                    <a href="#video" class="nav-link py-3">Video</a>
                 </li>
-                <li class="nav-item px-lg-5">
-                    <a href="#contact" class="nav-link">Contact</a>
+                <li class="nav-item mx-lg-2">
+                    <a href="#contact" class="nav-link py-3">Contact</a>
                 </li>
             </ul>
         </div>
@@ -49,13 +51,25 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./assets/images/carousel-1.jpg" alt="..." class="d-block w-100 m-auto greyscale" />
+                <img src="./assets/images/carousel-4.jpg" alt="..." class="d-block w-100 m-auto" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Surprised</h5>
+                    <p>The guys acting out a scene on their hit TV show</p>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/carousel-2.jpg" alt="..." class="d-block w-100 m-auto greyscale" />
+                <img src="./assets/images/carousel-2.jpg" alt="..." class="d-block w-100 m-auto" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Christmas Time</h5>
+                    <p>Calling for peace at the best time of the year</p>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/carousel-3.jpg" alt="..." class="d-block w-100 m-auto greyscale" />
+                <img src="./assets/images/carousel-3.jpg" alt="..." class="d-block w-100 m-auto" />
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Candid</h5>
+                    <p>Taken while the guys were chatting to the crowd at one of their live shows</p>
+                </div>
             </div>
         </div>
         <a href="#bandCarousel" class="carousel-control-prev" role="button" data-slide="prev">
@@ -69,15 +83,15 @@
     </div>
 
     <!-- Band Info Section -->
-    <div id="band" class="container text-center p-5">
-        <h1>The Monkees</h1>
+    <div id="band" class="container text-center p-5 bg-light-shade">
+        <h1 class="text-main-brand">The Monkees</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, ratione.</p>
         <p>Website for The Monkees</p>
         <div class="row pt-4">
             <div class="col-sm-6 col-lg-3">
                 <p class="font-weight-bold">Davy Jones</p>
                 <a href="#info-1" data-toggle="collapse">
-                    <img class="img-fluid rounded-circle bandmember greyscale" src="./assets/images/dj.jpg" alt="Davy Jones" />
+                    <img class="img-fluid rounded-circle bandmember" src="./assets/images/dj.jpg" alt="Davy Jones" />
                 </a>
                 <div class="collapse" id="info-1">
                     <p>Lorem ipsum dolor sit amet.</p>
@@ -88,7 +102,7 @@
             <div class="col-sm-6 col-lg-3">
                 <p class="font-weight-bold">Micky Dolenz</p>
                 <a href="#info-2" data-toggle="collapse">
-                    <img class="img-fluid rounded-circle bandmember greyscale" src="./assets/images/md.jpg" alt="Micky Dolenz" />
+                    <img class="img-fluid rounded-circle bandmember" src="./assets/images/md.jpg" alt="Micky Dolenz" />
                 </a>
                 <div class="collapse" id="info-2">
                     <p>Lorem ipsum dolor sit amet.</p>
@@ -99,7 +113,7 @@
             <div class="col-sm-6 col-lg-3">
                 <p class="font-weight-bold">Michael Nesmith</p>
                 <a href="#info-3" data-toggle="collapse">
-                    <img class="img-fluid rounded-circle bandmember greyscale" src="./assets/images/mn.jpg" alt="Michael Nesmith" />
+                    <img class="img-fluid rounded-circle bandmember" src="./assets/images/mn.jpg" alt="Michael Nesmith" />
                 </a>
                 <div class="collapse" id="info-3">
                     <p>Lorem ipsum dolor sit amet.</p>
@@ -110,7 +124,7 @@
             <div class="col-sm-6 col-lg-3">
                 <p class="font-weight-bold">Peter Tork</p>
                 <a href="#info-4" data-toggle="collapse">
-                    <img class="img-fluid rounded-circle bandmember greyscale" src="./assets/images/pt.jpg" alt="Peter Tork" />
+                    <img class="img-fluid rounded-circle bandmember" src="./assets/images/pt.jpg" alt="Peter Tork" />
                 </a>
                 <div class="collapse" id="info-4">
                     <p>Lorem ipsum dolor sit amet.</p>
@@ -122,50 +136,74 @@
     </div>
 
     <!-- Audio Section -->
-    <div id="audio" class="container-fluid text-center p-5 dark-bg">
-        <h3 class="text-white">AUDIO</h3>
+    <div id="audio" class="container-fluid text-center p-5 bg-dark-shade">
+        <h3 class="text-main-brand"><i class="fa fa-music"></i> AUDIO</h3>
         <p class="text-light">We love sharing our music with our fans, so check out four of our greatest hits here!</p>
 
-        <div class="row pt-4">
-            <div class="col-md-6 p-5 embed-responsive">
-                <h4 class="text-light">Clarksville</h4>
-                <audio src="./assets/audio/Clarksville.mp3" class="w-75 pt-5" controls></audio>
+        <div class="row">
+            <div class="col-md-4 offset-md-2 p-5 embed-responsive">
+                <div class="card bg-light-shade">
+                    <div class="card-body">
+                        <h4 class="text-main-brand">Last Train to Clarksville</h4>
+                        <p>Release Date: 16 August 1966</p>
+                        <p>Album: The Monkees</p>
+                        <audio src="./assets/audio/Clarksville.mp3" class="w-75 pt-3" controls></audio>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 p-5 embed-responsive">
-                <h4 class="text-light">Daydream Believer</h4>
-                <audio src="./assets/audio/DaydreamBeliever.mp3" class="w-75 pt-5" controls></audio>
+            <div class="col-md-4 p-5 embed-responsive">
+                <div class="card bg-light-shade">
+                    <div class="card-body">
+                        <h4 class="text-main-brand">Daydream Believer</h4>
+                        <p>Release Date: 25 October 1967</p>
+                        <p>Album: The Birds, The Bees & The Monkees</p>
+                        <audio src="./assets/audio/DaydreamBeliever.mp3" class="w-75 pt-3" controls></audio>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 p-5 embed-responsive">
-                <h4 class="text-light">I'm A Believer</h4>
-                <audio src="./assets/audio/ImABeliever.mp3" class="w-75 pt-5" controls></audio>
+            <div class="col-md-4 offset-md-2 p-5 embed-responsive">
+                <div class="card bg-light-shade">
+                    <div class="card-body">
+                        <h4 class="text-main-brand">I'm A Believer</h4>
+                        <p>Release Date: 12 November 1966</p>
+                        <p>Album: More of The Monkees</p>
+                        <audio src="./assets/audio/ImABeliever.mp3" class="w-75 pt-3" controls></audio>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 p-5 embed-responsive">
-                <h4 class="text-light">Stepping Stone</h4>
-                <audio src="./assets/audio/SteppingStone.mp3" class="w-75 pt-5" controls></audio>
+            <div class="col-md-4 p-5 embed-responsive">
+                <div class="card bg-light-shade">
+                    <div class="card-body">
+                        <h4 class="text-main-brand">(I'm Not Your) Steppin' Stone</h4>
+                        <p>Release Date: 12 November 1966</p>
+                        <p>Album: More of The Monkees</p>
+                        <audio src="./assets/audio/SteppingStone.mp3" class="w-75 pt-3" controls></audio>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Video Section -->
-    <div id="video" class="container text-center p-5">
-        <h3>VIDEO</h3>
+    <div id="video" class="container text-center p-5 bg-light-shade">
+        <h3 class="text-main-brand"><i class="fa fa-video-camera"></i> VIDEO</h3>
         <p>Check out the music video to our song, Daydream Believer, from our hit album, The Birds, The Bees & The Monkees</p>
 
-        <div class="embed-responsive embed-responsive-16by9">
-            <video src="./assets/video/TheMonkees.mp4" controls></video>
+        <div class="wrapper py-5">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video src="./assets/video/TheMonkees.mp4" controls></video>
+            </div>
         </div>
     </div>
 
     <!-- Contact Us Section -->
-    <div id="contact" class="container-fluid text-center p-5 dark-bg">
+    <div id="contact" class="container-fluid text-center p-5 bg-dark-shade">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <h3 class="text-white">
-                    Contact Us
-                </h3>
-                <p class="text-light">We love to play weddings or Christmas parties, so drop us a line to check our availability for your special day!</p>
+                <h3 class="text-main-brand"><i class="fa fa-envelope"></i> Contact Us</h3>
+                <p>We love to play weddings or Christmas parties, so drop us a line to check our availability for your special day!</p>
 
-                <form>
+                <form class="pt-5">
                     <div class="form-group">
                         <label for="contactName">Full Name</label>
                         <input type="text" class="form-control" id="contactName" placeholder="Full Name" />
@@ -178,7 +216,7 @@
                         <label for="contactMessage">Message</label>
                         <textarea class="form-control" id="contactMessage" rows="3" placeholder="Brief message why The Monkees should play your event"></textarea>
                     </div>
-                    <p class="btn btn-primary">Submit!</p>
+                    <p class="btn button-dark-accent">Submit!</p>
                 </form>
             </div>
         </div>
@@ -186,25 +224,25 @@
 
     <!-- Footer Section -->
     <footer class="text-center">
-        <a href="#myPage" class="d-block">
-            <i class="fa fa-chevron-up"></i>
+        <a href="#myPage" class="d-block h4">
+            <i class="fa fa-chevron-up text-main-brand"></i>
         </a>
-        <ul class="list-inline">
+        <ul class="list-inline pt-2">
             <li class="list-inline-item">
-                <a href="#">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                <a href="#" class="h4">
+                    <i class="fa fa-facebook text-main-brand" aria-hidden="true"></i>
                     <span class="sr-only">Facebook</span>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a href="#">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                <a href="#" class="h4">
+                    <i class="fa fa-twitter text-main-brand" aria-hidden="true"></i>
                     <span class="sr-only">Twitter</span>
                 </a>
             </li>
             <li class="list-inline-item">
-                <a href="#">
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                <a href="#" class="h4">
+                    <i class="fa fa-youtube text-main-brand" aria-hidden="true"></i>
                     <span class="sr-only">YouTube</span>
                 </a>
             </li>
