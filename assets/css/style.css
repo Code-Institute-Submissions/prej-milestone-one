@@ -20,14 +20,28 @@ body {
     color: #e80815;
 }
 
-.button-dark-accent {
+.button-main-brand {
+    background: #e80815;
+    color: white;
+}
+
+.button-main-brand:hover {
     background: #bc3e52;
     color: white;
 }
 
-.button-dark-accent:hover {
-    background: #e80815;
-    color: white;
+.icon-main-brand {
+    color: #e80815;
+}
+
+.icon-main-brand:hover {
+    color: #bc3e52;
+}
+
+/* Heading styles */
+
+h1, h3 {
+    letter-spacing: 10px;
 }
 
 /* Image styles */
@@ -41,7 +55,6 @@ body {
 }
 
 .bandmember:hover {
-    border-color: #8f93a8;
     filter: grayscale(90%);
     -webkit-filter: grayscale(90%);
 }
@@ -90,4 +103,20 @@ body {
 .navbar-nav .nav-link.active {
     color: white !important;
     background: black !important;
+}
+
+/* Footer styles */
+
+.footer-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    padding: 4px 0;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+}
+
+.footer-icon:hover {
+    background: #e80815;
+    color: white;
 }
