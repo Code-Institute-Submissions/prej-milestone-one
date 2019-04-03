@@ -4,6 +4,8 @@ Milestone Project One: User-Centric Frontend Development - Code Institute
 
 This is the website for the rock band, The Monkees. The page highlights a few of the bands greatest hits, as well as information relating to the band members. As the band are still touring, it features a section for enquires about their availability.
 
+A live version can be found on [Github Pages](https://prejudice182.github.io/prej-milestone-one/)
+
 ## UX
 
 When I was laying out this project, I wanted to make it as simple as possible, so I chose a one page layout, with different sections for different elements.
@@ -68,6 +70,7 @@ To clone this repository to run locally, you can run the following command:
 
 - The band information was copied from [this site](https://www.fakepersongenerator.com/user-biography-generator)
 - The smooth scroll function was copied from [W3Schools](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp)
+- The back to top function was copied from [this site](https://codepen.io/matthewcain/pen/ZepbeR)
 - All other content was written by myself
 
 ### Media

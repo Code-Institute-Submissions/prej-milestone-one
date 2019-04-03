@@ -40,7 +40,8 @@ body {
 
 /* Heading styles */
 
-h1, h3 {
+h1,
+h3 {
     letter-spacing: 10px;
 }
 
@@ -97,7 +98,8 @@ h1, h3 {
     padding-bottom: 0;
 }
 
-.nav-link, .navbar .navbar-brand {
+.nav-link,
+.navbar .navbar-brand {
     color: #8f93a8 !important;
 }
 
@@ -129,4 +131,41 @@ h1, h3 {
 .footer-icon:hover {
     background: #e80815;
     color: white;
+}
+
+/* Push down below navbar */
+
+.push-down {
+    height: 50px;
+}
+
+/* Back to top button */
+
+#top-button {
+    display: inline-block;
+    background: #e80815;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    padding: 6px 0;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background .3s, color .3s, opacity .3s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#top-button:hover {
+    cursor: pointer;
+    background: white;
+    color: #e80815;
+}
+
+#top-button.show {
+    opacity: 1;
+    visibility: visible;
 }

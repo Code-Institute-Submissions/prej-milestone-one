@@ -12,10 +12,15 @@
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" class="bg-light-shade">
+    <!-- Back to top button -->
+    <a href="#myPage" class="d-block h3 top-button" data-toggle="tooltip" title="TO TOP" id="top-button">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
     <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-shade fixed-top">
         <a href="#" class="navbar-brand">
-            <img src="./assets/images/logo.png" alt="Monkees logo" width="50">
+            <img src="./assets/images/logo.png" alt="Monkees logo" width="80">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,6 +46,9 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Push content below navbar -->
+    <div class="push-down"></div>
 
     <!-- Carousel Section -->
     <div id="bandCarousel" class="carousel slide" data-ride="carousel">
@@ -95,9 +103,9 @@
                     <img class="img-fluid rounded-circle bandmember" src="./assets/images/dj.jpg" alt="Davy Jones" />
                 </a>
                 <div class="collapse" id="info-1">
-                    <p>Freelance creator. Gamer. Zombie buff. Infuriatingly humble beer fanatic. Twitter enthusiast. Amateur tv ninja.</p>
-                    <p>Web trailblazer. Coffee fan. Reader. Bacon fanatic. Total music practitioner. Avid creator.</p>
-                    <p>Subtly charming explorer. Friendly tvaholic. Unapologetic alcohol fanatic. Pop culture lover.</p>
+                    <p>Freelance creator.</p>
+                    <p>Web trailblazer.</p>
+                    <p>Subtly charming explorer.</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
@@ -106,9 +114,9 @@
                     <img class="img-fluid rounded-circle bandmember" src="./assets/images/md.jpg" alt="Micky Dolenz" />
                 </a>
                 <div class="collapse" id="info-2">
-                    <p>Gamer. Twitter nerd. Devoted alcohol trailblazer. Proud food buff. Incurable communicator.</p>
-                    <p>Unapologetic reader. Social media maven. Beer lover. Food fanatic. Zombie advocate. Bacon aficionado. Web practitioner.</p>
-                    <p>Organizer. Bacon fanatic. Explorer. Zombie aficionado. Avid web fan. Music practitioner. Alcohol advocate. Total travel specialist.</p>
+                    <p>Gamer.</p>
+                    <p>Unapologetic reader.</p>
+                    <p>Organizer.</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
@@ -117,9 +125,9 @@
                     <img class="img-fluid rounded-circle bandmember" src="./assets/images/mn.jpg" alt="Michael Nesmith" />
                 </a>
                 <div class="collapse" id="info-3">
-                    <p>Certified bacon fanatic. Extreme entrepreneur. Proud travel enthusiast. Gamer. Devoted pop cultureaholic. Lifelong zombie ninja.</p>
-                    <p>Zombie advocate. Pop culture junkie. Infuriatingly humble internet lover. Web guru. Award-winning bacon fan. Coffee scholar. Writer.</p>
-                    <p>General food guru. Lifelong bacon lover. Internet trailblazer. Wannabe social media junkie.</p>
+                    <p>Certified bacon fanatic.</p>
+                    <p>Zombie advocate.</p>
+                    <p>General food guru.</p>
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
@@ -128,9 +136,9 @@
                     <img class="img-fluid rounded-circle bandmember" src="./assets/images/pt.jpg" alt="Peter Tork" />
                 </a>
                 <div class="collapse" id="info-4">
-                    <p>Beer nerd. Alcohol geek. Reader. Total organizer. Coffee fanatic. Food ninja.</p>
-                    <p>Problem solver. Beer junkie. Twitter maven. Incurable student. Evil social media practitioner. Amateur tv fan.</p>
-                    <p>Avid introvert. Music evangelist. Hipster-friendly twitter junkie. Zombieaholic.</p>
+                    <p>Beer nerd.</p>
+                    <p>Problem solver.</p>
+                    <p>Avid introvert.</p>
                 </div>
             </div>
         </div>
@@ -138,7 +146,7 @@
 
     <!-- Audio Section -->
     <div id="audio" class="container-fluid text-center p-5 bg-dark-shade">
-        <h3 class="text-main-brand"><i class="fas fa-music"></i> AUDIO</h3>
+        <h3 class="text-main-brand"><i class="fas fa-music d-block d-sm-inline-block"></i> AUDIO</h3>
         <p class="text-light">We love sharing our music with our fans, so check out four of our greatest hits here!</p>
 
         <div class="row flex-wrap">
@@ -191,7 +199,7 @@
 
     <!-- Video Section -->
     <div id="video" class="container text-center p-5 bg-light-shade">
-        <h3 class="text-main-brand"><i class="fas fa-video"></i> VIDEO</h3>
+        <h3 class="text-main-brand"><i class="fas fa-video d-block d-sm-inline-block"></i> VIDEO</h3>
         <p>Check out the music video to our song, Daydream Believer, from our hit album, The Birds, The Bees & The Monkees</p>
 
         <div class="wrapper my-5">
@@ -205,7 +213,7 @@
     <div id="contact" class="container-fluid text-center p-5 bg-dark-shade">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <h3 class="text-main-brand"><i class="fas fa-envelope"></i> CONTACT US</h3>
+                <h3 class="text-main-brand"><i class="fas fa-envelope d-block d-sm-inline-block"></i> CONTACT US</h3>
                 <p>We love to play weddings or Christmas parties, so drop us a line to check our availability for your special day!</p>
 
                 <form class="pt-5">
@@ -229,9 +237,6 @@
 
     <!-- Footer Section -->
     <footer class="text-center">
-        <a href="#myPage" class="d-block h3" data-toggle="tooltip" title="TO TOP">
-            <i class="fas fa-chevron-up icon-main-brand"></i>
-        </a>
         <ul class="list-inline pt-2">
             <li class="list-inline-item">
                 <a href="https://www.facebook.com/TheMonkees/" target="_blank" rel="noopener">
@@ -259,33 +264,66 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- jQuery Tooltip -->
+    <!-- jQuery Tooltip and Smooth Scrolling -->
     <script>
         $(document).ready(function() {
             // Enables tooltip usage
-            $("[data-toggle='tooltip']").tooltip();
+            $("[data-toggle='tooltip']").tooltip({
+                trigger: 'hover'
+            });
 
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
+            // Enables smooth scroll on navbar and footer links
+            $('.navbar a[href*="#"], footer a[href*="#"]')
+                // Remove links that don't actually link to anything
+                .not('[href="#"]')
+                .not('[href="#0"]')
+                .click(function(event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault();
+                            $('html, body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000, function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) { // Checking if the target was focused
+                                    return false;
+                                }
+                                else {
+                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                };
+                            });
+                        }
+                    }
+                });
 
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+            // Hide "back to top" button until near bottom of page
+            var btn = $("#top-button");
 
-                    // Store hash
-                    var hash = this.hash;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 800) {
+                    btn.addClass('show');
+                }
+                else {
+                    btn.removeClass('show');
+                }
+            });
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
+            btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, '800');
             });
         });
     </script>
