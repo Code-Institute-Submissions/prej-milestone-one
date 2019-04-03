@@ -81,6 +81,10 @@ h3 {
     background-color: #f3f7f3;
 }
 
+.carousel-item {
+    filter: grayscale(90%);
+}
+
 /* Video styles */
 
 .wrapper {
