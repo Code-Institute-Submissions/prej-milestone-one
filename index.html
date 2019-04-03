@@ -13,7 +13,7 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" class="bg-light-shade">
     <!-- Back to top button -->
-    <a href="#myPage" class="d-block h3 top-button" data-toggle="tooltip" title="TO TOP" id="top-button">
+    <a href="#myPage" class="d-inline-block h3 button-main-brand top-button" data-toggle="tooltip" title="TO TOP" id="top-button">
         <i class="fas fa-chevron-up"></i>
     </a>
 
@@ -229,15 +229,35 @@
                         <label for="contactMessage">Message</label>
                         <textarea class="form-control" id="contactMessage" rows="3" placeholder="Brief message why The Monkees should play your event" required></textarea>
                     </div>
-                    <button type="submit" class="btn button-main-brand">Submit!</button>
+                    <button type="button" class="btn button-main-brand" data-toggle="modal" data-target="#contact-modal">Submit!</button>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Modal -->
+    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-main-brand" id="modal-label">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This form is currently not wired up to submit any real data. In future projects, this might change, but for now, thank you for trying to use my site.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn button-main-brand" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Footer Section -->
     <footer class="text-center">
-        <ul class="list-inline pt-2">
+        <ul class="list-inline pt-3">
             <li class="list-inline-item">
                 <a href="https://www.facebook.com/TheMonkees/" target="_blank" rel="noopener">
                     <i class="fab fa-facebook icon-main-brand footer-icon" aria-hidden="true"></i>
