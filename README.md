@@ -35,13 +35,13 @@ The page uses the Scrollspy feature from Bootstrap, to highlight which part of t
 
 ## Technologies Used
 
-- HTML5
+- HTML
     - Used for the structural elements of the site
-- CSS3
+- CSS
     - Used to style the HTML elements
-- [Bootstrap (4.3)](https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
     - Used to give access to a multitude of helper classes for CSS
-- [jQuery (3.3.1)](https://jquery.com/)
+- [jQuery](https://jquery.com/)
     - Used for DOM manipulation
 
 ## Testing
@@ -60,9 +60,19 @@ The site was tested across 2 browsers, Google Chrome and Mozilla Firefox. I used
 
 This site is hosted on Github Pages, deployed from the master branch. Any changes committed to this branch will update this site accordingly.
 
-To clone this repository to run locally, you can run the following command:
+To clone this repository to run locally, you can do the following:
 
-```git clone https://github.com/Prejudice182/prej-milestone-one.git```
+- Create a new repository on Github
+- Clone my repository with the following commands on your local machine:
+
+    ```
+    git clone https://github.com/Prejudice182/prej-milestone-one.git
+    git remote rename origin upstream
+    git remote add origin *URL TO NEW GITHUB REPO*
+    git push origin master
+    ```
+    
+- Deploy to Github Pages using the repository settings on Github
 
 ## Credits
 
@@ -82,3 +92,4 @@ To clone this repository to run locally, you can run the following command:
 ### Acknowledgements
 
 - I received inspiration for this site from visiting various band sites.
+- Thanks to my mentor, [Oluwaseun Owonikoko](https://github.com/seunkoko)

@@ -18,11 +18,11 @@
     </a>
 
     <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-shade fixed-top">
-        <a href="#" class="navbar-brand">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-shade fixed-top px-0">
+        <a href="#" class="navbar-brand ml-3">
             <img src="./assets/images/logo.png" alt="Monkees logo" width="80">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -229,7 +229,7 @@
                         <label for="contactMessage">Message</label>
                         <textarea class="form-control" id="contactMessage" rows="3" placeholder="Brief message why The Monkees should play your event" required></textarea>
                     </div>
-                    <button type="button" class="btn button-main-brand" data-toggle="modal" data-target="#contact-modal">Submit!</button>
+                    <button type="submit" class="btn button-main-brand" data-toggle="modal" data-target="#contact-modal">Submit!</button>
                 </form>
             </div>
         </div>
@@ -284,69 +284,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- jQuery Tooltip and Smooth Scrolling -->
-    <script>
-        $(document).ready(function() {
-            // Enables tooltip usage
-            $("[data-toggle='tooltip']").tooltip({
-                trigger: 'hover'
-            });
-
-            // Enables smooth scroll on navbar and footer links
-            $('.navbar a[href*="#"], footer a[href*="#"]')
-                // Remove links that don't actually link to anything
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function(event) {
-                    // On-page links
-                    if (
-                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                        location.hostname == this.hostname
-                    ) {
-                        // Figure out element to scroll to
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        // Does a scroll target exist?
-                        if (target.length) {
-                            // Only prevent default if animation is actually gonna happen
-                            event.preventDefault();
-                            $('html, body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000, function() {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) { // Checking if the target was focused
-                                    return false;
-                                }
-                                else {
-                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                    $target.focus(); // Set focus again
-                                };
-                            });
-                        }
-                    }
-                });
-
-            // Hide "back to top" button until near bottom of page
-            var btn = $("#top-button");
-
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 800) {
-                    btn.addClass('show');
-                }
-                else {
-                    btn.removeClass('show');
-                }
-            });
-
-            btn.on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({ scrollTop: 0 }, '800');
-            });
-        });
-    </script>
+    <!-- Local javascript functions -->
+    <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
 
 </html>
