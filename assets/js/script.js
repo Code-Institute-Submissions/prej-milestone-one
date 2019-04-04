@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
 
     // Enables smooth scroll on navbar and footer links
-    $('.navbar a[href*="#"], footer a[href*="#"]')
+    $('.navbar a[href*="#"]')
         // Remove links that don't actually link to anything
         .not('[href="#"]')
         .not('[href="#0"]')

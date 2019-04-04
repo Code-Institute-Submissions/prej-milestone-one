@@ -56,9 +56,13 @@ The links in the navbar will smoothly scroll down to the anchor the user has sel
 
 The site was tested across 2 browsers, Google Chrome and Mozilla Firefox. I used the devtools in both browsers to check for compatibility issues on mobile devices. This lead to styling changes when using smaller devices as certain elements are too small or large to display correctly. I also checked the mobile view on my personal Android device, Motorola e5.
 
+While introducing the smooth scroll, it was found that it was affecting the band info section, causing unruly jumping. This was fixed by selecting only the navbar links for smooth scroll.
+
+Another issue was the navbar not collapsing on clicking an element on mobile view. This was fixed by adding a jQuery function to check if the nav-toggler is displayed, then toggle the dropdown if a link is clicked.
+
 ## Deployment
 
-This site is hosted on Github Pages, deployed from the master branch. Any changes committed to this branch will update this site accordingly.
+This site is hosted on Github Pages, deployed from the master branch. There are no differences between the development and deployed version.
 
 To clone this repository to run locally, you can do the following:
 
