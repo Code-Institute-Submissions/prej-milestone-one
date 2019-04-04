@@ -93,3 +93,4 @@ To clone this repository to run locally, you can do the following:
 
 - I received inspiration for this site from visiting various band sites.
 - Thanks to my mentor, [Oluwaseun Owonikoko](https://github.com/seunkoko)
+- Thanks to all members of the Code Institute Slack workspace
