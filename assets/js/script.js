@@ -64,4 +64,10 @@ $(document).ready(function() {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, '800');
     });
+    
+    // Toggle modal on validation
+    $("#validate-form").submit(function(event) {
+        $("#contact-modal").modal("toggle");
+        event.preventDefault();
+    });
 });

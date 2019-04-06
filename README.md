@@ -60,6 +60,8 @@ While introducing the smooth scroll, it was found that it was affecting the band
 
 Another issue was the navbar not collapsing on clicking an element on mobile view. This was fixed by adding a jQuery function to check if the nav-toggler is displayed, then toggle the dropdown if a link is clicked.
 
+I added a modal to be toggled when the submit button was clicked, telling users that no data was actually being submitted, there is no backend. When I did this though, it still showed the modal even though the form was not valid. I searched around on Stack Overflow for solutions to my problem, but none really covered my issue. So, I bound the submit event in jQuery to show the modal on successful submit.
+
 ## Deployment
 
 This site is hosted on Github Pages, deployed from the master branch. There are no differences between the development and deployed version.
