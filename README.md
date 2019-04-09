@@ -87,6 +87,7 @@ To clone this repository to run locally, you can do the following:
 - The band information was copied from [this site](https://www.fakepersongenerator.com/user-biography-generator)
 - The smooth scroll function was copied from [W3Schools](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp)
 - The back to top function was copied from [this site](https://codepen.io/matthewcain/pen/ZepbeR)
+- The CSS had its browser prefixes added by [Autoprefixer](https://autoprefixer.github.io/)
 - All other content was written by myself
 
 ### Media

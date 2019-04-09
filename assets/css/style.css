@@ -51,16 +51,24 @@ h3 {
     position: relative;
     margin-bottom: 25px;
     opacity: 0.7;
+    -webkit-filter: grayscale(90%);
     filter: grayscale(90%);
+    -webkit-transition: -webkit-filter .25s;
+    transition: -webkit-filter .25s;
+    -o-transition: filter .25s;
     transition: filter .25s;
+    transition: filter .25s, -webkit-filter .25s;
+    -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .bandmember:hover {
+    -webkit-filter: none;
     filter: none;
 }
 
 .card-img-top {
+    -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
@@ -82,12 +90,14 @@ h3 {
 }
 
 .carousel-item {
+    -webkit-filter: grayscale(90%);
     filter: grayscale(90%);
 }
 
 /* Video styles */
 
 .wrapper {
+    -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
@@ -129,6 +139,8 @@ h3 {
     font-size: 24px;
     padding: 4px 0;
     border-radius: 50px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
 }
 
@@ -154,6 +166,8 @@ h3 {
     position: fixed;
     bottom: 60px;
     right: 30px;
+    -webkit-transition: background .3s, color .3s, opacity .3s;
+    -o-transition: background .3s, color .3s, opacity .3s;
     transition: background .3s, color .3s, opacity .3s;
     opacity: 0;
     visibility: hidden;
