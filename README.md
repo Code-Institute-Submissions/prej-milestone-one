@@ -41,6 +41,8 @@ The page uses the Scrollspy feature from Bootstrap, to highlight which part of t
     - Used to style the HTML elements
 - [Bootstrap](https://getbootstrap.com/)
     - Used to give access to a multitude of helper classes for CSS
+- [FontAwesome](https://fontawesome.com/)
+    - Used for the social and heading icons
 - [jQuery](https://jquery.com/)
     - Used for DOM manipulation
 
