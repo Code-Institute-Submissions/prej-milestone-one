@@ -89,11 +89,6 @@ h3 {
     background-color: #f3f7f3;
 }
 
-.carousel-item {
-    /*-webkit-filter: grayscale(90%);
-    filter: grayscale(90%);*/
-}
-
 .carousel-item:after {
     content: "";
     display: block;
